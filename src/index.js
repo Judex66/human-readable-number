@@ -1,7 +1,7 @@
-module.exports = function numberToEnglish(n, custom_join_character) {
+module.exports = function numbertoword(n,word) {
 var string = n.toString(),
 units, tens, scales, start, end, chunks, chunksLen, chunk, ints, i, word, words;
-var and = custom_join_character||'';
+var and = word||'';
 
 if (parseInt(string) === 0) {
 return 'zero';
